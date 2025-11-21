@@ -416,3 +416,186 @@ body{font-family:Inter, Arial, sans-serif;overflow-x:hidden;background:#fff}
   .doctor{width:90%}
   .g-badge{width:50px;height:50px}
 }
+/* ---------------- MOBILE FIXES (MAX-WIDTH: 768PX) ---------------- */
+@media (max-width: 768px) {
+
+  /* MOBILE NAVBAR FIX */
+.navbar {
+  height: 70px;
+  padding: 0 16px;
+  background: #FFFAF5;
+  display: flex;
+  justify-content: space-between;
+ align-items: center;
+}
+/* Hide orange appointment button on mobile */
+.nav-btn {
+  display: none;
+}
+/* Right side phone button style */
+.call-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border: 1px solid rgba(0,0,0,0.1);
+  background: #fff;
+  border-radius: 40px;
+  font-size: 14px;
+  font-weight: 600;
+}
+/* Phone icon resize */
+.call-btn img {
+  height: 18px;
+}
+/* Navbar right container */
+.nav-right {
+  display: flex;
+}
+  /* HERO SECTION */
+  .hero {
+    flex-direction: column;
+    height: auto;
+  }
+  .hero-bg {
+    height: 380px;
+    object-fit: cover;
+  }
+  /* Doctor Image */
+  .doctor{
+    width: 180px !important;      /* chota size */
+    height: auto !important;
+    position: sticky !important;
+    right: 100px; /* right me chipka */
+    top: 80px !important;          /* upar adjust */
+  }
+   .overlay-box{
+    width: 85% !important;
+    padding: 18px !important;
+    position: absolute !important;
+    top: 20px !important;
+    left: 10px !important;
+  }
+  .hero{
+    height: 380px !important;
+    position: relative;
+  }
+}
+  .overlay-title { font-size: 20px; }
+  .overlay-sub { font-size: 13px; }
+  /* Form Box */
+  .form-box {
+    position: static;
+    width: 100%;
+    margin-top: 10px;
+    height: auto;
+    padding: 24px 16px;
+    border-radius: 0;
+  }
+  .form-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .form-row input {
+    width: 100%;
+  }
+  .captcha-row {
+    justify-content: space-between;
+  }
+  .captcha-code {
+    width: 80px;
+  }
+  /* MARQUEE */
+  .track {
+    gap: 30px;
+  }
+  .stat img {
+    height: 30px;
+  }
+  /* TYPES SECTION */
+  .types-heading {
+    width: 100%;
+    padding: 0 12px;
+  }
+  .types-wrapper {
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 12px;
+  }
+  .type-card {
+    width: 100%;
+    flex-direction: column;
+    height: auto;
+  }
+  .type-img {
+    width: 100%;
+    height: 200px;
+  }
+  .type-content {
+    width: 100%;
+    padding: 18px;
+  }
+  /* SMILES SECTION */
+  .smiles-wrapper {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 0 12px;
+  }
+  .smile-card {
+    width: 48%;
+  }
+  .smile-img {
+    height: 120px;
+    border-radius: 8px;
+  }
+  /* GOOGLE SECTION */
+  .google-section {
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px 0;
+    text-align: center;
+  }
+  .google-left { width: 100%; }
+  .google-right { width: 100%; padding: 0 12px; }
+  .google-cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .g-card {
+    width: 100%;
+    height: auto;
+  }
+  /* FOOTER FIX */
+  .footer {
+    padding: 25px 20px;
+  }
+  .footer-top {
+    flex-direction: column;
+    gap: 14px;
+  }
+  .footer-line {
+    width: 100%;
+    margin: 14px auto 0;
+  }
+  .footer-bottom {
+    margin-top: 20px;
+    font-size: 13px;
+  }
+/* -------- SMALL PHONES (MAX 480PX) -------- */
+
+@media (max-width: 480px) {
+  .doctor {
+    width: 90%;
+    margin-top: -100px;
+  }
+  .type-img { height: 160px; }
+
+  .smile-card {
+    width: 100%;
+  }
+  .smile-img {
+    height: 140px;
+  }
+}
